@@ -1,0 +1,56 @@
+
+Todo:
+    ☐ Editor window for the different settings in the project.
+        ☐ Needs to support easy adding of settings.
+    ☐ Replace Unit config with new unit damage chart system
+    ☐ Menu system
+        ☐ Requirements
+            ☐ Transistions
+                ☐ 3D
+                ☐ Fade
+                ☐ InOut movement
+            ☐ Easy setup(And defaulting to template)
+                ☐ Menu screen
+            ☐ Options/Settings.
+                ☐ Popups
+        ☐ Implementation
+            ☐ Button
+                ☐ Clicked action
+                ☐ Visuals
+                    ☐ Scale on hover
+                    ☐ Color change on hover, pressed
+    ☐ Spawn point system.
+        ☐ Look at DMSpilJam 2020
+    ☐ Add support for auto upload build for more than just my pc.
+    ☐ Look more into Sound manager
+    ☐ Refactoring stats system
+        ☐ Differentiate stats and other data(Eg. things, we have no need to upgrade or change during the game).
+    ☐ Guidelines for importing graphics
+    ☐ Guidelines for working together as programmers
+    ☐ Importing of previous gamejam scripts.
+    ☐ Vision system from DMSpilJam 2020
+    ☐ Trigger system
+        Take these into account DeathTrigger, WinTrigger and the pickup system
+    ☐ Pickup system
+        Take trigger system into account.
+    ☐ Projectile system
+        ☐ Look at previous gamejam(DMSpilJam 2020 as one)
+    ☐ Support for different movement types.
+        ☐ Platform movement from DMSpilJam 2020
+    ☐ Death requirements improvement?
+    ☐ Some general debug shortcuts?
+
+Archive:
+  ✔ Cleanup of the project. @done(20-03-09 13:39) @project(Todo)
+  ✔ Easy UI system @done(20-03-09 11:54) @project(Todo)
+  ✔ Debug system @done(20-02-06 15:56) @project(Todo)
+  ✔ Input system(Especially for Xbox controllers) @done(20-02-06 15:56) @project(Todo)
+  ✔ Handle animation for simple/easy animations. Eg. Just playing animation with different images. @done(20-02-06 15:56) @project(Todo)
+  ✔ Upgrades system @done(19-11-27 13:45) @project(Todo)
+  ✔ Animation system @done(19-11-27 13:46) @project(Todo)
+  ✔ Spawning system @done(19-11-27 13:46) @project(Todo)
+  ✔ Unit system @done(19-11-27 13:46) @project(Todo)
+  ✔ CollisionTransform @done(19-11-27 13:46) @project(Todo)
+  ✔ RootGo @done(19-11-27 13:46) @project(Todo)
+  ✔ Add life into the system @done(19-11-27 13:46) @project(Todo)
+  ✔ Damageable @done(19-11-27 13:46) @project(Todo)
