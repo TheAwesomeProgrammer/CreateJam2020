@@ -1,11 +1,6 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Unity/Assets/Prefabs/Bullet.prefab.meta
-guid: 38c9eb5963c8a2440a4e353ec06a3f7b
-PrefabImporter:
-=======
 guid: 6c2254b2347ebec4a8ed2723eece1f47
 NativeFormatImporter:
->>>>>>> 5517f227e51895e753342f0219210412a17adeef:Unity/Assets/Sprites/UI Animaitons/Health/HPAnimation.anim.meta
   externalObjects: {}
   mainObjectFileID: 0
   userData: 

@@ -21,45 +21,25 @@ public class BombCounter : MonoBehaviour
         BombLeft = 5;
         BombAmount = "x";
         BombCount.text = BombLeft.ToString();
-        
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetBombCount(int count)
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            if (BombLeft>0)
-            {
-                BombLeft--;
-                BombCount.text = BombLeft.ToString();
-                BombUsageAnimtionens();
-            }
-            else if (BombLeft <= 0)
-            {
-                BombLeft = 0;
-                BombAmount = "x";
-                BombCount.text = BombLeft.ToString();
-                BombZeroAnimationens();
-                BombIsZero();
-            }
-
-        }
-           
+        BombLeft = count;
         
-
-
-           /* if(BombLeft == 0 && Input.GetKeyDown(KeyCode.E))
+        if (BombLeft>0)
         {
-            BombLeft = 0;
+            BombCount.text = BombLeft.ToString();
+            BombUsageAnimtionens();
+        }
+        else if (BombLeft <= 0)
+        {
             BombAmount = "x";
             BombCount.text = BombLeft.ToString();
             BombZeroAnimationens();
-            
-        BombCount.text = BombLeft.ToString();
+            BombIsZero();
         }
-        */
-   }
+    }
 
     public void BombUsageAnimtionens()
     {
