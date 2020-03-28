@@ -433,7 +433,7 @@ RectTransform:
   m_GameObject: {fileID: 527472202}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0830646, y: 1.0830646, z: 1.0830646}
+  m_LocalScale: {x: 1.0830646, y: 1.083065, z: 1.083065}
   m_Children: []
   m_Father: {fileID: 1045810227}
   m_RootOrder: 0
@@ -453,7 +453,7 @@ Animator:
   m_GameObject: {fileID: 527472202}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6c5fd066071298748910baefc5a086f1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 00e5e250a59651f429e10d4e6933e1b9, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -556,14 +556,14 @@ RectTransform:
   m_GameObject: {fileID: 972688902}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.12, y: 1.12, z: 1.12}
   m_Children: []
   m_Father: {fileID: 1045810227}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1.1000061, y: -0.1000309}
+  m_AnchoredPosition: {x: 0.11916, y: -0.11405}
   m_SizeDelta: {x: 12, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &972688904
@@ -806,7 +806,8 @@ MonoBehaviour:
   BombX: {fileID: 972688904}
   Bombimg: {fileID: 1307392131}
   BombAnimation: {fileID: 0}
-  BombUsage: {fileID: 0}
+  BombUsage: {fileID: 527472206}
+  BombIsZero: {fileID: 0}
 --- !u!4 &1376786195
 Transform:
   m_ObjectHideFlags: 0

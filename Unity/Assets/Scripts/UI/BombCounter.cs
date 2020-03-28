@@ -13,6 +13,7 @@ public class BombCounter : MonoBehaviour
     public Image Bombimg;
     public GameObject BombAnimation;
     public Animator BombUsage;
+    public Animator BombXAnimation;
 
     // Start is called before the first frame update
     void Start()
@@ -27,34 +28,52 @@ public class BombCounter : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E))
-        {          
-            BombLeft--;
-            BombUsageAnimtionens();
-        }
-           
-
-            if (BombLeft > 0)
+        {
+            if (BombLeft>0)
             {
-                BombAmount = "x";
+                BombLeft--;
                 BombCount.text = BombLeft.ToString();
+                BombUsageAnimtionens();
             }
-            else if(BombLeft == 0)
+            else if (BombLeft <= 0)
             {
                 BombLeft = 0;
                 BombAmount = "x";
                 BombCount.text = BombLeft.ToString();
+                BombZeroAnimationens();
+                BombIsZero();
             }
 
-            if(BombLeft == 0 && Input.GetKeyDown(KeyCode.E))
-        {
-
         }
+           
+        
 
+
+           /* if(BombLeft == 0 && Input.GetKeyDown(KeyCode.E))
+        {
+            BombLeft = 0;
+            BombAmount = "x";
+            BombCount.text = BombLeft.ToString();
+            BombZeroAnimationens();
+            
+        BombCount.text = BombLeft.ToString();
+        }
+        */
    }
 
     public void BombUsageAnimtionens()
     {
-        BombUsage.Play("UseOfBombs");
+        BombUsage.Play("BombUsage");
+    }
+
+    public void BombZeroAnimationens()
+    {
+        BombUsage.Play("BombLeftZero");
+    }
+
+    public void BombIsZero()
+    {
+        BombXAnimation.Play("XOnZero");
     }
 }
 
