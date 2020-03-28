@@ -23,7 +23,7 @@ namespace Owl
 
         [SerializeField] 
         private WizardAnimation _wizardAnimation;
-        
+
         public override UnitType UnitType => UnitType.Owl;
         protected override IUnitStatsManager StatsManager => _statsManager;
         protected override IArmor Armor { get; set; }
@@ -37,7 +37,7 @@ namespace Owl
             _statsManager.Init();
             Armor = new UnitArmor(this, HealthFlag.Destructable | HealthFlag.Killable, _owlSetup);
             _playerMovement = new PlayerMovement(_owlSetup, _statsManager.MovementStats);
-            _owlBombLauncher = new OwlBombLauncher(_owlSetup, _statsManager.AttackStats, _statsManager.BombStats, _wizardAnimation);
+            _owlBombLauncher = new OwlBombLauncher(_owlSetup, _statsManager.AttackStats, _statsManager.BombStats, _wizardAnimation, MyGameManager.Instance.BombCounter);
             _owlSmokeMachine = new OwlSmokeMachine(_owlSetup, _wizardAnimation, _statsManager.OwlSmokeStats);
             SetupInput();
             AddLifeCycleObjects( Armor, _playerMovement);
