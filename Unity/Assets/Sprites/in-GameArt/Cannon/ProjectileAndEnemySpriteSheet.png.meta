@@ -20,6 +20,30 @@ TextureImporter:
   - first:
       213: -8660202101768529757
     second: ProjectileAndEnemySpriteSheet_5
+  - first:
+      213: 3086982152382621469
+    second: ProjectileAndEnemySpriteSheet_6
+  - first:
+      213: -1855948914543464264
+    second: ProjectileAndEnemySpriteSheet_7
+  - first:
+      213: -3117506829581119479
+    second: ProjectileAndEnemySpriteSheet_8
+  - first:
+      213: 1972760698054699392
+    second: ProjectileAndEnemySpriteSheet_9
+  - first:
+      213: 3441121073938563881
+    second: ProjectileAndEnemySpriteSheet_10
+  - first:
+      213: 7940077135370837641
+    second: ProjectileAndEnemySpriteSheet_11
+  - first:
+      213: 2139234736831720203
+    second: ProjectileAndEnemySpriteSheet_12
+  - first:
+      213: 3556619336376329276
+    second: ProjectileAndEnemySpriteSheet_13
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -136,7 +160,7 @@ TextureImporter:
         width: 155
         height: 74
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +181,7 @@ TextureImporter:
         width: 148
         height: 92
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +202,7 @@ TextureImporter:
         width: 508
         height: 198
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +223,7 @@ TextureImporter:
         width: 121
         height: 339
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +244,7 @@ TextureImporter:
         width: 274
         height: 270
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +265,7 @@ TextureImporter:
         width: 179
         height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,6 +273,174 @@ TextureImporter:
       bones: []
       spriteID: 3a8def87218c0d780800000000000000
       internalID: -8660202101768529757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 625
+        width: 204
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17acbc79e927da20800000000000000
+      internalID: 3086982152382621469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 438
+        width: 202
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b07d53ab485e36e0800000000000000
+      internalID: -1855948914543464264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 248
+        width: 203
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90096f54e046cb4d0800000000000000
+      internalID: -3117506829581119479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 85
+        width: 199
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089e66a1767a06b10800000000000000
+      internalID: 1972760698054699392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 625
+        width: 176
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9230839826151cf20800000000000000
+      internalID: 3441121073938563881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 439
+        width: 183
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98edaf61612d03e60800000000000000
+      internalID: 7940077135370837641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 203
+        width: 259
+        height: 175
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0be704b8a610bd10800000000000000
+      internalID: 2139234736831720203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ProjectileAndEnemySpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 28
+        width: 261
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c342ff15176ab5130800000000000000
+      internalID: 3556619336376329276
       vertices: []
       indices: 
       edges: []
