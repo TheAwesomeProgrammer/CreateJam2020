@@ -807,7 +807,7 @@ MonoBehaviour:
   Bombimg: {fileID: 1307392131}
   BombAnimation: {fileID: 0}
   BombUsage: {fileID: 527472206}
-  BombIsZero: {fileID: 0}
+  BombXAnimation: {fileID: 972688906}
 --- !u!4 &1376786195
 Transform:
   m_ObjectHideFlags: 0
