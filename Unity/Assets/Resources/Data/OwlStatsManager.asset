@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a694cae32f694e1d8babdbb630a2e2eb, type: 3}
+  m_Name: OwlStatsManager
+  m_EditorClassIdentifier: 
+  _healthStats:
+    _healthStat:
+      _startStat: 2
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    _invulnerabilityDuration:
+      _startStat: 0
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _movementStats:
+    _speed:
+      _startStat: 30
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    _maxSpeed:
+      _startStat: 40
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _attackStats:
+    _attackSpeedStat:
+      _startStat: 1
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _bombStats:
+    Damage:
+      _startStat: 1
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    ExplosionRadius:
+      _startStat: 0.35
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    Ammo:
+      _startStat: 5
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    ExplosionLiveTime:
+      _startStat: 0.5
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _owlSmokeStats:
+    SpawnInterval:
+      _startStat: 0.1
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    LiveTime:
+      _startStat: 5
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    SmokeUsagePerCloud:
+      _startStat: 5
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    SmokeAmount:
+      _startStat: 100
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    SmokeGrowthCycleInterval:
+      _startStat: 0.25
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    SmokeGrowthPerSecond:
+      _startStat: 10
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1

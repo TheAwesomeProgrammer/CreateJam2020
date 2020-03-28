@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using Common.UnitSystem;
+using Generated;
 using UnityEngine;
 
 namespace Common.Util
@@ -60,6 +61,13 @@ namespace Common.Util
 
         private IUnit GetUnitFromCollider(Collider2D other)
         {
+            bool isOtherColliderTriggerChecker = other.gameObject.CompareTag(Generated.Tags.TRIGGER);
+
+            if (isOtherColliderTriggerChecker)
+            {
+                return null;
+            }
+            
             IUnit otherUnit = other.GetComponent<IUnit>();
             if (otherUnit != null)
             {

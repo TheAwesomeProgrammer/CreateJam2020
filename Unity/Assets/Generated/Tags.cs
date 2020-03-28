@@ -11,5 +11,6 @@ namespace Generated
         public const string MAINCAMERA = "MainCamera";
         public const string PLAYER = "Player";
         public const string GAMECONTROLLER = "GameController";
+        public const string TRIGGER = "Trigger";
     }
 }

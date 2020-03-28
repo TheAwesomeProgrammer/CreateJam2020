@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using Common.SpawnHanding;
 using Common.UnitSystem;
 using Common.UnitSystem.Stats;
+using Plugins.Timer.Source;
 using UnityEngine;
 
 namespace Gameplay.Missile
 {
     public class Missile : Unit, ISpawnedObject<Missile.Data>
     {
+        private const float LIVE_TIME = 15f;
+        
         [SerializeField]
         private MissileStatsManager _statsManager;
 
@@ -27,15 +30,15 @@ namespace Gameplay.Missile
             _statsManager.Init();
             Armor = new UnitArmor(this, HealthFlag.Destructable | HealthFlag.Killable, _movementSetup);
             AddLifeCycleObjects(Armor);
+            Timer.Register(LIVE_TIME, () => Armor.Die());
         }
 
         public void OnSpawned(Data data)
         {
-            MissleMovement missleMovement = new MissleMovement(_movementSetup, data, Armor);
-            AddLifeCycleObject(missleMovement);
+            MissleMovement missileMovement = new MissleMovement(_movementSetup, data, Armor);
+            AddLifeCycleObject(missileMovement);
         }
-        
-       
+
         [Serializable]
         public class Data
         {

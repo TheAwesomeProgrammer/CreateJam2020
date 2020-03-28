@@ -32,15 +32,15 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                     ""id"": ""24fa4be4-acae-47a5-a8b5-d3d919843946"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press""
                 },
                 {
                     ""name"": ""Smoke"",
                     ""type"": ""Button"",
                     ""id"": ""6a567da8-14ac-42a1-9d38-2e9e7d3f861f"",
-                    ""expectedControlType"": """",
+                    ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press""
                 },
                 {
                     ""name"": ""Sprint"",
@@ -253,7 +253,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""e05beea8-674b-435e-80de-d268d82dac8a"",
-                    ""path"": ""<Keyboard>/space"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",

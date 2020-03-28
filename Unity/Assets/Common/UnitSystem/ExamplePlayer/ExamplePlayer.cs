@@ -43,7 +43,7 @@ namespace Common.UnitSystem.ExamplePlayer
             SlowManager = new UnitSlowManager(GetStatsManager<ExamplePlayerStatsManager>().MovementStats);
             Armor = new UnitArmor(this, HealthFlag.Destructable | HealthFlag.Killable, _movementSetup);
             _playerAnimator = new Animator(this, _examplePlayerAnimatorData, _movementSetup);
-            _movement = new PlayerMovement( _movementSetup, _statsManager.GetStats<MovementStats>(), _playerInputActions);
+            _movement = new PlayerMovement( _movementSetup, _statsManager.GetStats<MovementStats>());
             _movementAnimation = new MovementAnimation(_movementSetup, () => _movement.CurrentMoveDirection, 
                 _statsManager.GetStats<MovementStats>(), _playerAnimator.AnimationStateManager);
             AddLifeCycleObjects(_playerAnimator, Armor, _movement, _movementAnimation);

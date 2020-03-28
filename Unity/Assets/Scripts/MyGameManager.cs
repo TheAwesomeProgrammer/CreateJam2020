@@ -7,5 +7,7 @@ public class MyGameManager : MonoBehaviour
     {
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Tower);
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Bomb);
+        SpawnManager.Instance.SpawnAllWithType(SpawnType.Owl);
+        SpawnManager.Instance.SpawnAllWithType(SpawnType.Base);
     }
 }

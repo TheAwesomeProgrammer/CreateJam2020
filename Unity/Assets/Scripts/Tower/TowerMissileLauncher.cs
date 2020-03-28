@@ -3,28 +3,31 @@ using Common.SpawnHanding;
 using Common.UnitSystem;
 using Common.UnitSystem.LifeCycle;
 using Common.UnitSystem.Stats;
+using Gameplay.Missile;
 using Plugins.Timer.Source;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Tower
 {
-    public class EnemyMissileLauncher : IOnDestroy
+    public class TowerMissileLauncher : IOnDestroy
     {
         private UnitAttackStats _unitAttackStats;
         private bool _canAttack;
         private Timer _attackTimer;
         private Gameplay.Missile.Missile.Data _missileData;
-        private IUnit _enemy;
+        private IUnit _tower;
         private TowerVision _towerVision;
         private MissileLaunchData _missileLaunchData;
-        private MovementSetup _movementSetup;
+        private TowerSetup _movementSetup;
 
-        public EnemyMissileLauncher(TowerVision towerVision, MovementSetup movementSetup, UnitAttackStats unitAttackStats,
-            Gameplay.Missile.Missile.Data missileData, MissileLaunchData missileLaunchData, IUnit enemy)
+        public event Action LaunchedMissile;
+
+        public TowerMissileLauncher(TowerVision towerVision, TowerSetup movementSetup, UnitAttackStats unitAttackStats,
+            Gameplay.Missile.Missile.Data missileData, MissileLaunchData missileLaunchData, IUnit tower)
         {
             _towerVision = towerVision;
-            _enemy = enemy;
+            _tower = tower;
             _missileLaunchData = missileLaunchData;
             _movementSetup = movementSetup;
             towerVision.TargetEnteredVision += OnTargetSeen;
@@ -44,12 +47,13 @@ namespace Tower
 
         private void LaunchMissile()
         {
-            _missileData.Owner = _enemy;
-            _missileData.MissileDirection = (_towerVision.CanonDirection() * GetRandomSpread()).normalized;
+            _missileData.Owner = _tower;
+            _missileData.MissileDirection = (_towerVision.CanonForwardDirection() * GetRandomSpread()).normalized;
             Spawner.Spawn(_missileLaunchData.MissilePrefab, _missileLaunchData.SpawnPoint.position,
-                _movementSetup.MovementTransform.eulerAngles, _missileData);
+                _movementSetup.Canon.eulerAngles, _missileData);
             _canAttack = false;
             _attackTimer = Timer.Register(_unitAttackStats.AttackSpeed, () => _canAttack = true);
+            LaunchedMissile?.Invoke();
         }
 
         private Vector2 GetRandomSpread()

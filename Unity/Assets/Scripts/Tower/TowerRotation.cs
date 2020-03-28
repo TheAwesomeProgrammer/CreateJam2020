@@ -21,9 +21,9 @@ namespace Tower
         {
             MovementSetup movementSetup = target.GetSetup<MovementSetup>();
             Vector2 unitPosition = movementSetup.MovementTransform.position;
-            Vector2 directionToPlayer = (unitPosition - (Vector2)_movementTransform.position).normalized;
-            float angleToPlayer = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
-            _canon.rotation = Quaternion.Euler(0f, 0f, angleToPlayer - 90);
+            Vector2 directionToTarget = (unitPosition - (Vector2)_movementTransform.position).normalized;
+            float angleToTarget = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg;
+            _canon.rotation = Quaternion.Euler(0f, 0f, angleToTarget + 180);
         }
     }
 }

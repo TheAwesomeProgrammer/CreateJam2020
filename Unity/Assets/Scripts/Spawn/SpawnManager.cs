@@ -18,34 +18,44 @@ public class SpawnManager : Singleton<SpawnManager>
 
     public void Spawn<T>(SpawnType spawnType, Action<T> onSpawned = null) where T : MonoBehaviour
     {
-        GameObject spawnPrefab = spawnTypeToPrefabMapping.GetSpawnPrefabForSpawnType(spawnType);
-
-        T spawnedObject = Spawn<T>(spawnPrefab, GetSpawnPointFromSpawnType(spawnType));
+        T spawnedObject = Spawn<T>(GetSpawnPointFromSpawnType(spawnType));
         
         onSpawned?.Invoke(spawnedObject);
     }
 
     public void SpawnAllWithType(SpawnType spawnType)
     {
-        GameObject spawnPrefab = spawnTypeToPrefabMapping.GetSpawnPrefabForSpawnType(spawnType);
+        GameObject spawnPrefab = GetSpawnPrefabForSpawnType(spawnType);
         foreach (var spawnPoint in _spawnPoints)
         {
             if (spawnPoint.SpawnType == spawnType)
             {
-                Spawn<MonoBehaviour>(spawnPrefab, spawnPoint);
+                Spawn<MonoBehaviour>(spawnPoint);
             }
         }
     }
 
     public GameObject Spawn(SpawnPoint spawnPoint)
     {
-        GameObject spawnPrefab = spawnTypeToPrefabMapping.GetSpawnPrefabForSpawnType(spawnPoint.SpawnType);
-        return Instantiate(spawnPrefab, spawnPoint.Position, spawnPoint.Rotation);
+        GameObject spawnPrefab = GetSpawnPrefabForSpawnType(spawnPoint.SpawnType);
+        GameObject spawnedGo = Instantiate(spawnPrefab, spawnPoint.Position, spawnPoint.Rotation);
+        spawnedGo.transform.localScale = spawnPoint.Scale;
+        return spawnedGo;
     }
 
-    private T Spawn<T>(GameObject spawnPrefab, SpawnPoint spawnPoint)
+    public GameObject GetSpawnPrefabForSpawnType(SpawnType spawnType)
     {
-        return Instantiate(spawnPrefab, spawnPoint.Position, spawnPoint.Rotation).GetComponent<T>();
+        return spawnTypeToPrefabMapping.GetSpawnPrefabForSpawnType(spawnType);
+    }
+    
+    public T GetSpawnPrefabForSpawnType<T>(SpawnType spawnType)
+    {
+        return spawnTypeToPrefabMapping.GetSpawnPrefabForSpawnType(spawnType).GetComponent<T>();
+    }
+
+    private T Spawn<T>(SpawnPoint spawnPoint)
+    {
+        return Spawn(spawnPoint).GetComponent<T>();
     }
 
     private SpawnPoint GetSpawnPointFromSpawnType(SpawnType spawnType)

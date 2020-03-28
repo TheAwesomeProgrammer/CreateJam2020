@@ -1,5 +1,9 @@
 ﻿public enum SpawnType
 {
     Tower,
-    Bomb
+    Bomb,
+    Owl,
+    Explosion,
+    Smoke,
+    Base
 }

@@ -14,7 +14,8 @@ namespace Tower
     
     public class TowerVision : IUpdate
     {
-        private Vector2 _startLookDirection;
+        private Vector2 _visionLookDirection;
+        private Vector2 _canonDirection;
         private Data _data;
         private IUnit _lastTarget;
         private LayerMask _visionLayermask;
@@ -26,13 +27,14 @@ namespace Tower
         public event TargetEnteredVision TargetStayedInVision;
         public event TargetExitedVision TargetExitedVision;
         
-        public TowerVision(TowerSetup towerSetup, Transform visionStartTransform, Data data, Vector2 startLookDirection, LayerMask visionLayermask)
+        public TowerVision(TowerSetup towerSetup, Transform visionStartTransform, Data data, Vector2 visionLookDirection, Vector2 canonDirection, LayerMask visionLayermask)
         {
             _visionLayermask = visionLayermask;
             _towerVisionStartTransform = visionStartTransform;
             _canon = towerSetup.Canon;
             _data = data;
-            _startLookDirection = startLookDirection;
+            _canonDirection = canonDirection;
+            _visionLookDirection = visionLookDirection;
             _unitsInVisionRange = new List<IUnit>();
             AddTriggerNotifier(towerSetup.TriggerGo);
         }
@@ -70,7 +72,7 @@ namespace Tower
                 Vector2 unitPosition = movementSetup.MovementTransform.position;
                 float distanceToUnit = Vector2.Distance(unitPosition, _towerVisionStartTransform.position);
 
-                if (distanceToUnit < minDistanceToUnit && CanSeeTarget(unitPosition))
+                if (distanceToUnit < minDistanceToUnit && CanSeeTarget(unitPosition, unit))
                 {
                     minDistanceToUnit = distanceToUnit;
                     closestUnitInRange = unit;
@@ -97,22 +99,22 @@ namespace Tower
             DebugPanel.Log("CurrentTargetSeeing", "Tower", target);
         }
 
-        private bool CanSeeTarget(Vector2 targetPosition)
+        private bool CanSeeTarget(Vector2 targetPosition, IUnit unit)
         {
             return IsPlayerWithinVisionCone(targetPosition) &&
-                   IsNoObstructionToLineOfSightToPlayer(targetPosition);
+                   IsNoObstructionToLineOfSightToTarget(targetPosition, unit);
         }
 
-        private bool IsNoObstructionToLineOfSightToPlayer(Vector2 targetPosition)
+        private bool IsNoObstructionToLineOfSightToTarget(Vector2 targetPosition, IUnit unit)
         {
+            Debug.DrawRay(_towerVisionStartTransform.position, DirectionToTarget(targetPosition) * int.MaxValue, Color.red);
             RaycastHit2D hit = Physics2D.Raycast(_towerVisionStartTransform.position, DirectionToTarget(targetPosition), int.MaxValue, _visionLayermask);
-            return hit.transform != null && hit.transform.GetComponentInParent<IUnit>() != null;
+            return hit.transform != null && hit.transform.GetComponentInParent<IUnit>() == unit;
         }
 
         private bool IsPlayerWithinVisionCone(Vector2 targetPosition)
         {
-            Vector2 forwardDirection = ForwardDirection();
-            float degreeBetweenForwardDirectionAndPlayer = Vector2.Angle(ForwardDirection(), DirectionToTarget(targetPosition));
+            float degreeBetweenForwardDirectionAndPlayer = Vector2.Angle(VisionForwardDirection(), DirectionToTarget(targetPosition));
                 
             return degreeBetweenForwardDirectionAndPlayer <= _data.ConeInDegrees.Value;
         }
@@ -122,14 +124,14 @@ namespace Tower
             return (targetPosition - (Vector2)_towerVisionStartTransform.position).normalized;
         }
 
-        public Vector2 CanonDirection()
+        public Vector2 CanonForwardDirection()
         {
-            return _canon.rotation * _startLookDirection;
+            return _canon.rotation * _canonDirection;
         }
         
-        public Vector2 ForwardDirection()
+        public Vector2 VisionForwardDirection()
         {
-            return _startLookDirection;
+            return _visionLookDirection;
         }
         
         [Serializable]

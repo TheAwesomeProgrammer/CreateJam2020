@@ -22,7 +22,7 @@ namespace Gameplay.Missile
             _owner = spawnData.Owner;
             _missileArmor = missileArmor;
             TriggerNotifier triggerNotifier = _movementSetup.MovementTransform.gameObject.AddComponent<TriggerNotifier>();
-            triggerNotifier.Init(new List<UnitType>(){UnitType.All}, _owner);
+            triggerNotifier.Init(_data.UnitsToDamage, _owner);
             triggerNotifier.UnitEntered += OnUnitEntered;
         }
 

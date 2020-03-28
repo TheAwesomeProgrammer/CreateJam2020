@@ -15,6 +15,8 @@ public class SpawnPoint : MonoBehaviour
     public Vector2 Position => transform.position;
     public Quaternion Rotation => transform.rotation;
 
+    public Vector3 Scale => transform.localScale;
+
     private void Awake()
     {
         if (Application.isPlaying)

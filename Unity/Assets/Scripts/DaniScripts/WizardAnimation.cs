@@ -10,7 +10,7 @@ public class WizardAnimation : MonoBehaviour
     public Animator OwlHead;
     public Animator Fire;
     public Animator WizardArm;
-    public bool fireMode = false;
+    private bool fireMode = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,31 +19,18 @@ public class WizardAnimation : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetFireMode(bool fireMode)
     {
-        
-        if(Input.GetKeyDown(KeyCode.O))
+        if (fireMode)
         {
             WizardUseWandAnimation();
+            PlayFireAnimation();
         }
-        //TOGGLE SMOKE/FIRE 
-        if (Input.GetKeyDown(KeyCode.I))
+        else
         {
-            fireMode = !fireMode;
-            if (fireMode == true)
-            {
-                WizardUseWandAnimation();
-                TurnOffFireAnimation();
-            }
-            else if(fireMode == false)
-            {
-                WizardUseWandAnimation();
-                PlayFireAnimation();
-            }
+            WizardUseWandAnimation();
+            TurnOffFireAnimation();
         }
-        
-
     }
 
     public void WizardUseWandAnimation()

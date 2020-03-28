@@ -7,26 +7,19 @@ namespace Common.Movement
 {
     public class PlayerMovement : Movement
     {
-        private PlayerInputActions _playerInputActions;
         private Vector2 _moveDirection;
         
-        public PlayerMovement(MovementSetup movementSetup, MovementStats movementStats, PlayerInputActions playerInputActions) : base(movementSetup, movementStats)
+        public PlayerMovement(MovementSetup movementSetup, MovementStats movementStats) : base(movementSetup, movementStats)
         {
-            _playerInputActions = playerInputActions;
         }
 
-        private void PlayerInputOnonActionTriggered(InputAction.CallbackContext obj)
+        public void OnMove(Vector2 direction)
         {
-            _moveDirection = Vector2.zero;
-            if (obj.performed && obj.action.name == _playerInputActions.Player.Move.name)
-            {
-                _moveDirection = obj.ReadValue<Vector2>();
-            }
+            _moveDirection = direction;
         }
 
         protected override Vector2 GetMoveDirection()
         {
-            //_playerInput.actions[_playerInputActions.Player.Move.name].ReadValue<Vector2>()
             return _moveDirection;
         }
     }
