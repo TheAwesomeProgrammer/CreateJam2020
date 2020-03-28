@@ -80,6 +80,11 @@ namespace Common.UnitSystem
         {
             _lifeCycleHandler.OnDestroy();
         }
+
+        protected virtual void OnDrawGizmos()
+        {
+            _lifeCycleHandler?.OnDrawGizmos();
+        }
         
     }
 }

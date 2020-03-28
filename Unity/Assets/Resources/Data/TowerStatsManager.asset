@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TowerStatsManager
+  m_EditorClassIdentifier: Assembly-CSharp:Tower:EnemyStatsManager
+  _unitHealthStats:
+    _healthStat:
+      _startStat: 3
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    _invulnerabilityDuration:
+      _startStat: 0
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _movementStats:
+    _speed:
+      _startStat: 0
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    _maxSpeed:
+      _startStat: 0
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _unitAttackStats:
+    _attackSpeedStat:
+      _startStat: 0.4
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _enemySpecificStats:
+    _enemyVisionData:
+      ConeInDegrees:
+        _startStat: 90
+        _showMinMaxValue: 0
+        _minStatValue: -2.1474836e+9
+        _maxStatValue: -1
+    _missileSpawnData:
+      UnitsToDamage: 0000000001000000020000000300000004000000
+      MovementSpeed:
+        _startStat: 20
+        _showMinMaxValue: 0
+        _minStatValue: -2.1474836e+9
+        _maxStatValue: -1
+      Damage:
+        _startStat: 1
+        _showMinMaxValue: 0
+        _minStatValue: -2.1474836e+9
+        _maxStatValue: -1
+      MinSpread:
+        _startStat: 0.4
+        _showMinMaxValue: 0
+        _minStatValue: -2.1474836e+9
+        _maxStatValue: -1
+      MaxSpread:
+        _startStat: 0.8
+        _showMinMaxValue: 0
+        _minStatValue: -2.1474836e+9
+        _maxStatValue: -1

@@ -11,6 +11,8 @@ namespace Common.Util
 
     public class TriggerNotifier : MonoBehaviour
     {
+        private IUnit _owner;
+        
         [SerializeField]
         private List<UnitType> _unitsToNotifyOn;
 
@@ -18,15 +20,16 @@ namespace Common.Util
         public event UnitStayed UnitStayed;
         public event UnitExited UnitExited;
 
-        public void Init(List<UnitType> unitsToNotifyOn)
+        public void Init(List<UnitType> unitsToNotifyOn, IUnit owner = null)
         {
             _unitsToNotifyOn = unitsToNotifyOn;
+            _owner = owner;
         }
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             IUnit otherUnit = GetUnitFromCollider(other);
-            if (otherUnit != null && _unitsToNotifyOn.Contains(otherUnit.UnitType))
+            if (otherUnit != null && otherUnit != _owner && ShouldNotify(otherUnit.UnitType))
             {
                 UnitEntered?.Invoke(otherUnit.UnitType, otherUnit);
             }
@@ -35,7 +38,7 @@ namespace Common.Util
         private void OnTriggerStay2D(Collider2D other)
         {
             IUnit otherUnit = GetUnitFromCollider(other);
-            if (otherUnit != null && _unitsToNotifyOn.Contains(otherUnit.UnitType))
+            if (otherUnit != null && otherUnit != _owner && ShouldNotify(otherUnit.UnitType))
             {
                 UnitStayed?.Invoke(otherUnit.UnitType, otherUnit);
             }
@@ -44,10 +47,15 @@ namespace Common.Util
         private void OnTriggerExit2D(Collider2D other)
         {
             IUnit otherUnit = GetUnitFromCollider(other);
-            if (otherUnit != null && _unitsToNotifyOn.Contains(otherUnit.UnitType))
+            if (otherUnit != null && otherUnit != _owner && ShouldNotify(otherUnit.UnitType))
             {
                 UnitExited?.Invoke(otherUnit.UnitType, otherUnit);
             }
+        }
+
+        private bool ShouldNotify(UnitType otherUnitsType)
+        {
+            return _unitsToNotifyOn.Contains(otherUnitsType) || _unitsToNotifyOn.Contains(UnitType.All);
         }
 
         private IUnit GetUnitFromCollider(Collider2D other)

@@ -3,7 +3,10 @@ namespace Common.UnitSystem
     public enum UnitType
     {
         Player,
-        Enemy,
+        Bomb,
+        Base,
+        Missile,
+        Tower,
         All
     }
 }
