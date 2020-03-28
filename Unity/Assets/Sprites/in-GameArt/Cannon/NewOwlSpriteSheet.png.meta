@@ -1,0 +1,748 @@
+fileFormatVersion: 2
+guid: 0cf28bd797cbe9c42981c882edc208f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5837341968945068834
+    second: NewOwlSpriteSheet_0
+  - first:
+      213: 6854628801142753052
+    second: NewOwlSpriteSheet_1
+  - first:
+      213: 1159460862331878643
+    second: NewOwlSpriteSheet_2
+  - first:
+      213: 3921294289483842045
+    second: NewOwlSpriteSheet_3
+  - first:
+      213: -924723581700769641
+    second: NewOwlSpriteSheet_4
+  - first:
+      213: -3368460257749858922
+    second: NewOwlSpriteSheet_5
+  - first:
+      213: -7006788561455289610
+    second: NewOwlSpriteSheet_6
+  - first:
+      213: 3341747056804583774
+    second: NewOwlSpriteSheet_7
+  - first:
+      213: 2525554907134728587
+    second: NewOwlSpriteSheet_8
+  - first:
+      213: 2415516653809100065
+    second: NewOwlSpriteSheet_9
+  - first:
+      213: -5648611030813032070
+    second: NewOwlSpriteSheet_10
+  - first:
+      213: 1258358108320606340
+    second: NewOwlSpriteSheet_11
+  - first:
+      213: 3095348726462872530
+    second: NewOwlSpriteSheet_12
+  - first:
+      213: 2073016499229425358
+    second: NewOwlSpriteSheet_13
+  - first:
+      213: 9065278805894641464
+    second: NewOwlSpriteSheet_14
+  - first:
+      213: 1621111129279674411
+    second: NewOwlSpriteSheet_15
+  - first:
+      213: 9044876920257651285
+    second: NewOwlSpriteSheet_16
+  - first:
+      213: -3193549693102772465
+    second: NewOwlSpriteSheet_17
+  - first:
+      213: 6128023451072684282
+    second: NewOwlSpriteSheet_18
+  - first:
+      213: 8237692466795326681
+    second: NewOwlSpriteSheet_19
+  - first:
+      213: -2040985499648786838
+    second: NewOwlSpriteSheet_20
+  - first:
+      213: 7695182689017461802
+    second: NewOwlSpriteSheet_21
+  - first:
+      213: -41160772810141158
+    second: NewOwlSpriteSheet_22
+  - first:
+      213: 263358144439600069
+    second: NewOwlSpriteSheet_23
+  - first:
+      213: -2337389606701522970
+    second: NewOwlSpriteSheet_24
+  - first:
+      213: 1951103581076698146
+    second: NewOwlSpriteSheet_25
+  - first:
+      213: 250958764568887328
+    second: NewOwlSpriteSheet_26
+  - first:
+      213: 5144889025114169921
+    second: NewOwlSpriteSheet_27
+  - first:
+      213: -1434263151947935809
+    second: NewOwlSpriteSheet_28
+  - first:
+      213: -6146697027512130747
+    second: NewOwlSpriteSheet_29
+  - first:
+      213: 2089262567828805276
+    second: NewOwlSpriteSheet_30
+  - first:
+      213: 2212840928507747880
+    second: NewOwlSpriteSheet_31
+  - first:
+      213: -6481754731903078920
+    second: NewOwlSpriteSheet_32
+  - first:
+      213: 3524779547800281633
+    second: NewOwlSpriteSheet_33
+  - first:
+      213: -3407572109885972635
+    second: NewOwlSpriteSheet_34
+  - first:
+      213: -4086211764118118386
+    second: NewOwlSpriteSheet_35
+  - first:
+      213: 8668643722190586608
+    second: NewOwlSpriteSheet_36
+  - first:
+      213: 2625964308945790464
+    second: NewOwlSpriteSheet_37
+  - first:
+      213: -952959050661106982
+    second: NewOwlSpriteSheet_38
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 3511
+        width: 482
+        height: 374
+      alignment: 9
+      pivot: {x: 0.47921678, y: 0.7500444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b337bd797620150800000000000000
+      internalID: 5837341968945068834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 3663
+        width: 658
+        height: 222
+      alignment: 9
+      pivot: {x: 0.49257356, y: 0.63757217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c178647c398802f50800000000000000
+      internalID: 6854628801142753052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1563
+        y: 3691
+        width: 702
+        height: 194
+      alignment: 9
+      pivot: {x: 0.5012574, y: 0.54036623}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc724ed28b371010800000000000000
+      internalID: 1159460862331878643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 3691
+        width: 696
+        height: 310
+      alignment: 9
+      pivot: {x: 0.49795777, y: 0.31662992}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1c370616c3b6630800000000000000
+      internalID: 3921294289483842045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 3691
+        width: 612
+        height: 392
+      alignment: 9
+      pivot: {x: 0.49071148, y: 0.27160707}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7987c454dc8ba23f0800000000000000
+      internalID: -924723581700769641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 3205
+        width: 218
+        height: 210
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6958cc01e33d041d0800000000000000
+      internalID: -3368460257749858922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 3099
+        width: 176
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6faef2a4de2e2ce90800000000000000
+      internalID: -7006788561455289610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 793
+        y: 3225
+        width: 226
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e595b0a2e35406e20800000000000000
+      internalID: 3341747056804583774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 3275
+        width: 342
+        height: 154
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbf6c05443e4fa20800000000000000
+      internalID: 3095348726462872530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 2397
+        y: 3267
+        width: 324
+        height: 166
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecef712d585d4cc10800000000000000
+      internalID: 2073016499229425358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 2729
+        width: 276
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1298f5ce74cd6ff0800000000000000
+      internalID: -41160772810141158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 2725
+        width: 285
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3470846d2a7a300800000000000000
+      internalID: 263358144439600069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 2721
+        width: 284
+        height: 330
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9dd6698cef8fd0800000000000000
+      internalID: -2337389606701522970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 2721
+        width: 258
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224b11e9e56b31b10800000000000000
+      internalID: 1951103581076698146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 3275
+        width: 376
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89928c9ec29c0320800000000000000
+      internalID: 2525554907134728587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 3258
+        width: 400
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 125e4534993a58120800000000000000
+      internalID: 2415516653809100065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 3164
+        y: 2786
+        width: 497
+        height: 505
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a714902f13a1c91b0800000000000000
+      internalID: -5648611030813032070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2052
+        width: 494
+        height: 515
+      alignment: 9
+      pivot: {x: 0.54030305, y: 0.4932437}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488aeae4806967110800000000000000
+      internalID: 1258358108320606340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 2059
+        width: 522
+        height: 522
+      alignment: 9
+      pivot: {x: 0.5133313, y: 0.4933343}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8373a374b075ecd70800000000000000
+      internalID: 9065278805894641464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 1933
+        width: 810
+        height: 738
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28b52aabf75f7610800000000000000
+      internalID: 1621111129279674411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 2082
+        y: 1846
+        width: 849
+        height: 888
+      alignment: 9
+      pivot: {x: 0.51639336, y: 0.5391835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 552261d13abd58d70800000000000000
+      internalID: 9044876920257651285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2951
+        y: 1725
+        width: 996
+        height: 1019
+      alignment: 9
+      pivot: {x: 0.46053505, y: 0.57512176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f2d0a697b3ea3d0800000000000000
+      internalID: -3193549693102772465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 639
+        width: 1124
+        height: 1131
+      alignment: 9
+      pivot: {x: 0.4814262, y: 0.58921796}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af063707cdc1b0550800000000000000
+      internalID: 6128023451072684282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NewOwlSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 1133
+        width: 386
+        height: 383
+      alignment: 9
+      pivot: {x: 0.53605694, y: 0.5272548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc2f3447a9225270800000000000000
+      internalID: 8237692466795326681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
