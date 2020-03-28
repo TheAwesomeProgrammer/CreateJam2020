@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 namespace Common.UnitSystem.Stats
 {
+    [Serializable]
      public class UnitAttackStats: IResetStats
         {
             [SerializeField] 

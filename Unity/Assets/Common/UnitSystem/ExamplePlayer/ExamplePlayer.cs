@@ -7,15 +7,12 @@ using Animator = Common._2DAnimation.Animator;
 
 namespace Common.UnitSystem.ExamplePlayer
 {
-    public class ExamplePlayer : MovingUnit<ExamplePlayerConfig>
+    public class ExamplePlayer : MovingUnit
     {
         private Animator _playerAnimator;
         private Movement.Movement _movement;
         private PlayerInputActions _playerInputActions;
         private MovementAnimation _movementAnimation;
-
-        [SerializeField] 
-        private ExamplePlayerConfig _examplePlayerConfig;
         
         [SerializeField]
         private MovementSetup _movementSetup;
@@ -34,8 +31,7 @@ namespace Common.UnitSystem.ExamplePlayer
         protected override UnitSetup UnitSetup => _movementSetup;
 
         protected override IArmor Armor { get; set; }
-
-        protected override ExamplePlayerConfig Config { get; set; }
+        
 
         protected override UnitSlowManager SlowManager { get; set; }
 
@@ -44,7 +40,6 @@ namespace Common.UnitSystem.ExamplePlayer
             base.Awake();
             StatsManager.Init();
             _playerInputActions = new PlayerInputActions();
-            Config = _examplePlayerConfig;
             SlowManager = new UnitSlowManager(GetStatsManager<ExamplePlayerStatsManager>().MovementStats);
             Armor = new UnitArmor(this, HealthFlag.Destructable | HealthFlag.Killable, _movementSetup);
             _playerAnimator = new Animator(this, _examplePlayerAnimatorData, _movementSetup);

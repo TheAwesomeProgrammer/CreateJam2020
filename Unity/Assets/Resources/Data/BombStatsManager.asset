@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5949ad7f10841ef90707f218ecc4f8d, type: 3}
+  m_Name: BombStatsManager
+  m_EditorClassIdentifier: 
+  _healthStats:
+    _healthStat:
+      _startStat: 100
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    _invulnerabilityDuration:
+      _startStat: 0
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+  _movementStats:
+    _speed:
+      _startStat: 10
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1
+    _maxSpeed:
+      _startStat: 20
+      _showMinMaxValue: 0
+      _minStatValue: -2.1474836e+9
+      _maxStatValue: -1

@@ -13,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Tower
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1692299403
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: InGame
+    uniqueID: 4155832503
+    locked: 0
+  - name: UI
+    uniqueID: 499454313
+    locked: 0
+  - name: Foreground
+    uniqueID: 2669847305
     locked: 0

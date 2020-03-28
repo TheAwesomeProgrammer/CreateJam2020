@@ -57,7 +57,7 @@ namespace Common.UnitSystem
 
         public void DecreaseTempStat(float statDecrease)
         {
-            _tempStatChange -= ReturnStatChangeValueWithinLimits(-statDecrease);
+            _tempStatChange += ReturnStatChangeValueWithinLimits(-statDecrease);
         }
 
         private float ReturnStatChangeValueWithinLimits(float stateChangeValue)
