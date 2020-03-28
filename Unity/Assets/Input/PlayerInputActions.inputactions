@@ -1,5 +1,5 @@
 {
-    "name": "Test",
+    "name": "PlayerInputActions",
     "maps": [
         {
             "name": "Player",
@@ -14,18 +14,26 @@
                     "interactions": ""
                 },
                 {
-                    "name": "Look",
-                    "type": "Value",
-                    "id": "f1bda637-89b2-4992-a049-8fc988060472",
-                    "expectedControlType": "Vector2",
+                    "name": "Bomb",
+                    "type": "Button",
+                    "id": "24fa4be4-acae-47a5-a8b5-d3d919843946",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
                 },
                 {
-                    "name": "Fire",
+                    "name": "Smoke",
                     "type": "Button",
-                    "id": "24fa4be4-acae-47a5-a8b5-d3d919843946",
-                    "expectedControlType": "Button",
+                    "id": "6a567da8-14ac-42a1-9d38-2e9e7d3f861f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Sprint",
+                    "type": "Button",
+                    "id": "00bf8936-4bc8-472a-babb-3ac32c03eff8",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
                 }
@@ -165,45 +173,12 @@
                 },
                 {
                     "name": "",
-                    "id": "c1f7a91b-d0fd-4a62-997e-7fb9b69bf235",
-                    "path": "<Gamepad>/rightStick",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "8c8e490b-c610-4785-884f-f04217b23ca4",
-                    "path": "<Pointer>/delta",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Keyboard&Mouse;Touch",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "3e5f5442-8668-4b27-a940-df99bad7e831",
-                    "path": "<Joystick>/{Hatswitch}",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Joystick",
-                    "action": "Look",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "143bb1cd-cc10-4eca-a2f0-a3664166fe91",
                     "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Gamepad",
-                    "action": "Fire",
+                    "action": "Bomb",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -214,7 +189,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Fire",
+                    "action": "Bomb",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -225,7 +200,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "Fire",
+                    "action": "Bomb",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -236,7 +211,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Joystick",
-                    "action": "Fire",
+                    "action": "Bomb",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -247,7 +222,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "XR",
-                    "action": "Fire",
+                    "action": "Bomb",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1831c66f-0cd7-48b5-98f4-ca4dbc55b02b",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Bomb",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e05beea8-674b-435e-80de-d268d82dac8a",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Smoke",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57a4a977-cc9a-4e30-806e-e5ba45bb997d",
+                    "path": "<Keyboard>/shift",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard&Mouse",
+                    "action": "Sprint",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

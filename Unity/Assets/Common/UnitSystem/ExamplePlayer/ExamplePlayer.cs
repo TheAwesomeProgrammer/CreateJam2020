@@ -23,7 +23,7 @@ namespace Common.UnitSystem.ExamplePlayer
         [SerializeField]
         private ExamplePlayerStatsManager _statsManager;
 
-        public override UnitType UnitType => UnitType.Player;
+        public override UnitType UnitType => UnitType.Owl;
 
         public Animator PlayerAnimator => _playerAnimator;
 

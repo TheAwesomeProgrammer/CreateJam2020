@@ -40,7 +40,7 @@ namespace Tower
         private void AddTriggerNotifier(GameObject triggerGo)
         {
             TriggerNotifier triggerNotifier = triggerGo.AddComponent<TriggerNotifier>();
-            triggerNotifier.Init(new List<UnitType>(){ UnitType.Bomb, UnitType.Player});
+            triggerNotifier.Init(new List<UnitType>(){ UnitType.Bomb, UnitType.Owl});
             triggerNotifier.UnitStayed += OnUnitStayed;
         }
 

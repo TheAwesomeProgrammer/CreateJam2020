@@ -2,7 +2,7 @@ namespace Common.UnitSystem
 {
     public enum UnitType
     {
-        Player,
+        Owl,
         Bomb,
         Base,
         Missile,
