@@ -83,12 +83,12 @@ MonoBehaviour:
       _minStatValue: 0
       _maxStatValue: 100
     SmokeGrowthCycleInterval:
-      _startStat: 0.25
+      _startStat: 0.1
       _showMinMaxValue: 0
       _minStatValue: -2.1474836e+9
       _maxStatValue: -1
     SmokeGrowthPerSecond:
-      _startStat: 10
+      _startStat: 18
       _showMinMaxValue: 0
       _minStatValue: -2.1474836e+9
       _maxStatValue: -1
