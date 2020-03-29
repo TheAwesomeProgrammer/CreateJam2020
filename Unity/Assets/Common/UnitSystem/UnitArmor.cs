@@ -26,6 +26,7 @@ namespace Common.UnitSystem
 
         public HealthFlag HealthFlags { get; }
         public bool IsDead => _life.Health.Value <= 0;
+        public float Health => _life.Health.Value;
         public bool IsInvulnerable => _nextDamageableTime >= Time.time;
 
         public UnitArmor(IUnit ownerUnit, HealthFlag healthFlags, UnitSetup unitSetup, params Func<bool>[] destroyRequirements)

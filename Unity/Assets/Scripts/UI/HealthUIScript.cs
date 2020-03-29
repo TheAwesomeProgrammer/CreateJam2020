@@ -18,31 +18,37 @@ public class HealthUIScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         Health = 6; 
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    public void SetHealth(int health)
     {
-
-        if (Input.GetKeyDown(KeyCode.E))
+        Health = health;
+        switch (Health)
         {
-            Debug.Log("Health lost");
-            Health--;
+            case 5:
+                HearhtRight3.active = false;
+                break;
 
-            switch (Health)
-            {
-                case 5:
-                    HearhtRight1.active = false;
-                    break;
+            case 4:
+                HearhtLeft3.active = false;
+                break;
+            case 3:
+                HearhtRight2.active = false;
+                break;
 
-                case 4:
-                    HearhtLeft1.active = false;
-                    break;
-
-            }
+            case 2:
+                HearhtLeft2.active = false;
+                break;
+                
+            case 1:
+                HearhtRight1.active = false;
+                break;
+            case 0:
+                HearhtLeft1.active = false;
+                break;
         }
-        
     }
 }

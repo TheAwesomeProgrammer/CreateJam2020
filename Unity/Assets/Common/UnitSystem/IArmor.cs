@@ -5,6 +5,7 @@ namespace Common.UnitSystem
     public interface IArmor
     {
         HealthFlag HealthFlags { get; }
+        float Health { get; }
         
         event Died Died;
         event TookDamage TookDamage;

@@ -17,6 +17,8 @@ namespace Owl
         private Timer _growthCycleLoop;
         private float _smokeGrowthPerCycle;
         private WizardAnimation _wizardAnimation;
+
+        public float SmokeBarProcent => _data.SmokeAmount.CurrentProcent;
         
         public OwlSmokeMachine(OwlSetup owlSetup, WizardAnimation wizardAnimation, Data data)
         {

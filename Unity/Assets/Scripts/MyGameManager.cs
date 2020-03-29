@@ -7,7 +7,17 @@ public class MyGameManager : Singleton<MyGameManager>
     [SerializeField]
     private BombCounter _bombCounter;
 
+    [SerializeField] 
+    private HealthUIScript _healthUiScript;
+
+    [SerializeField] 
+    private Transform _smokeBarTransform;
+
     public BombCounter BombCounter => _bombCounter;
+
+    public HealthUIScript HealthUiScript => _healthUiScript;
+
+    public Transform SmokeBarTransform => _smokeBarTransform;
     
     private void Start()
     {

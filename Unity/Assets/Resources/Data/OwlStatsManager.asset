@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _healthStats:
     _healthStat:
-      _startStat: 2
+      _startStat: 6
       _showMinMaxValue: 0
       _minStatValue: -2.1474836e+9
       _maxStatValue: -1
@@ -80,8 +80,8 @@ MonoBehaviour:
     SmokeAmount:
       _startStat: 100
       _showMinMaxValue: 0
-      _minStatValue: -2.1474836e+9
-      _maxStatValue: -1
+      _minStatValue: 0
+      _maxStatValue: 100
     SmokeGrowthCycleInterval:
       _startStat: 0.25
       _showMinMaxValue: 0

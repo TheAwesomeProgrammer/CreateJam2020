@@ -2,6 +2,7 @@
 using Common.Movement;
 using Common.UnitSystem;
 using Common.UnitSystem.Stats;
+using Common.Util;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -39,9 +40,16 @@ namespace Owl
             _playerMovement = new PlayerMovement(_owlSetup, _statsManager.MovementStats);
             _owlBombLauncher = new OwlBombLauncher(_owlSetup, _statsManager.AttackStats, _statsManager.BombStats, _wizardAnimation, MyGameManager.Instance.BombCounter);
             _owlSmokeMachine = new OwlSmokeMachine(_owlSetup, _wizardAnimation, _statsManager.OwlSmokeStats);
+            Bar bar = new Bar(MyGameManager.Instance.SmokeBarTransform, () => _owlSmokeMachine.SmokeBarProcent);
             SetupInput();
-            AddLifeCycleObjects( Armor, _playerMovement);
+            AddLifeCycleObjects( Armor, _playerMovement, bar);
             Armor.Died += OnDied;
+            Armor.TookDamage += OnTookDamage;
+        }
+
+        private void OnTookDamage(int damage, IUnit unitdealingdamage)
+        {
+            MyGameManager.Instance.HealthUiScript.SetHealth((int)Armor.Health);
         }
 
         private void OnEnable()
