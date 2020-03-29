@@ -3,6 +3,8 @@ using Common.Movement;
 using Common.UnitSystem;
 using Common.UnitSystem.Stats;
 using Common.Util;
+using Plugins.LeanTween.Framework;
+using Plugins.Timer.Source;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -15,6 +17,7 @@ namespace Owl
         private PlayerMovement _playerMovement;
         private OwlBombLauncher _owlBombLauncher;
         private OwlSmokeMachine _owlSmokeMachine;
+        private Color _originalColor;
 
         [SerializeField]
         private OwlSetup _owlSetup;
@@ -24,6 +27,15 @@ namespace Owl
 
         [SerializeField] 
         private WizardAnimation _wizardAnimation;
+
+        [SerializeField] 
+        private Color _damageColor;
+
+        [SerializeField] 
+        private float _damageTime;
+
+        [SerializeField] 
+        private float _damageFadeInOutTime;
 
         public override UnitType UnitType => UnitType.Owl;
         protected override IUnitStatsManager StatsManager => _statsManager;
@@ -36,6 +48,7 @@ namespace Owl
             base.Awake();
             _statsManager = Instantiate(_statsManager);
             _statsManager.Init();
+            _originalColor = Color.white;
             Armor = new UnitArmor(this, HealthFlag.Destructable | HealthFlag.Killable, _owlSetup);
             _playerMovement = new PlayerMovement(_owlSetup, _statsManager.MovementStats);
             _owlBombLauncher = new OwlBombLauncher(_owlSetup, _statsManager.AttackStats, _statsManager.BombStats, _wizardAnimation, MyGameManager.Instance.BombCounter);
@@ -49,8 +62,22 @@ namespace Owl
 
         private void OnTookDamage(int damage, IUnit unitdealingdamage)
         {
+            foreach (var spriteRenderer in _owlSetup.RootGo.GetComponentsInChildren<SpriteRenderer>())
+            {
+                LeanTween.color(spriteRenderer.gameObject, _damageColor, _damageFadeInOutTime);
+                Timer.Register(_damageTime, () => ResetColor(spriteRenderer));
+            }
             AudioManager.Instance.PlayOwlHitSound();
             MyGameManager.Instance.HealthUiScript.SetHealth((int)Armor.Health);
+        }
+
+        private void ResetColor(SpriteRenderer spriteRenderer)
+        {
+            if (spriteRenderer != null)
+            {
+                LeanTween.color(spriteRenderer.gameObject, _originalColor, _damageFadeInOutTime);
+            }
+            
         }
 
         private void OnEnable()

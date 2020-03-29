@@ -114,6 +114,9 @@ MonoBehaviour:
     _smokeSpawnPoint: {fileID: 8924020679345880783}
   _statsManager: {fileID: 11400000, guid: 1a465d1f5a215f843901de4a1367f420, type: 2}
   _wizardAnimation: {fileID: 220918346711793099}
+  _damageColor: {r: 1, g: 0, b: 0, a: 1}
+  _damageTime: 1
+  _damageFadeInOutTime: 0.3
 --- !u!1 &5598406460290569156
 GameObject:
   m_ObjectHideFlags: 0
