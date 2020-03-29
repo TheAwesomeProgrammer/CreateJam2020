@@ -43,8 +43,8 @@ MonoBehaviour:
   _enemySpecificStats:
     _enemyVisionData:
       ConeInDegrees:
-        _startStat: 90
-        _showMinMaxValue: 0
+        _startStat: 180
+        _showMinMaxValue: 1
         _minStatValue: -2.1474836e+9
         _maxStatValue: -1
     _missileSpawnData:

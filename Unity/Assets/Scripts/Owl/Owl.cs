@@ -42,7 +42,7 @@ namespace Owl
             _owlSmokeMachine = new OwlSmokeMachine(_owlSetup, _wizardAnimation, _statsManager.OwlSmokeStats);
             Bar bar = new Bar(MyGameManager.Instance.SmokeBarTransform, () => _owlSmokeMachine.SmokeBarProcent);
             SetupInput();
-            AddLifeCycleObjects( Armor, _playerMovement, bar);
+            AddLifeCycleObjects( Armor, _playerMovement, bar, _owlSmokeMachine);
             Armor.Died += OnDied;
             Armor.TookDamage += OnTookDamage;
         }
