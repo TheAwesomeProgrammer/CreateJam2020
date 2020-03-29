@@ -1691,6 +1691,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1880177272}
     m_Modifications:
+    - target: {fileID: 2982255465564439481, guid: acbfeff1783495b499ba4770cf4c99c9,
+        type: 3}
+      propertyPath: _sceneToLoad
+      value: EscapeFromTheWest
+      objectReference: {fileID: 0}
     - target: {fileID: 2982255465663530082, guid: acbfeff1783495b499ba4770cf4c99c9,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MenuSystem/Menu.unity
+    guid: 3e9a65c95a196f64dbbddb5f2759b10d
+  - enabled: 1
     path: Assets/Scenes/DaniArea/EscapeFromTheWest.unity
     guid: f6d274a3290d4494992351bcb708f7a1
   - enabled: 1
@@ -14,9 +17,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuSystem/GameOver.unity
     guid: 24204ec4d5fee7f40970bcd47bea008c
-  - enabled: 1
-    path: Assets/Scenes/MenuSystem/Menu.unity
-    guid: 3e9a65c95a196f64dbbddb5f2759b10d
   - enabled: 1
     path: Assets/Scenes/MenuSystem/Tutorial.unity
     guid: 54d44edd944c12242956f751b4d7385e
