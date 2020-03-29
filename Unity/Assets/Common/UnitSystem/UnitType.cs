@@ -8,6 +8,7 @@ namespace Common.UnitSystem
         Missile,
         Tower,
         Ground,
+        Smoke,
         All
     }
 }

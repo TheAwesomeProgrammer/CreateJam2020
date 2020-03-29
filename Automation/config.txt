@@ -1,5 +1,5 @@
 ;!@Install@!UTF-8! 
-Title="DefaultGameJamProject" 
-BeginPrompt="Do you want to install DefaultGameJamProject?" 
-RunProgram="DefaultGameJamProject.exe" 
+Title="MarwinTheWizardAndTheNaziBombingOwl" 
+BeginPrompt="Do you want to install MarwinTheWizardAndTheNaziBombingOwl?" 
+RunProgram="MarwinTheWizardAndTheNaziBombingOwl.exe" 
 ;!@InstallEnd@! 

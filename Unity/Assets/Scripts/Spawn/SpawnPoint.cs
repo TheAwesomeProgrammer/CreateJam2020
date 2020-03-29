@@ -1,7 +1,9 @@
 ﻿using System;
 using Gamelogic.Extensions;
 using UnityEditor;
+#if UNITY_EDITOR
 using UnityEditor.Experimental.SceneManagement;
+#endif
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -35,6 +37,7 @@ public class SpawnPoint : MonoBehaviour
 
     private void Update()
     {
+#if UNITY_EDITOR
         if (!Application.isPlaying && PrefabStageUtility.GetCurrentPrefabStage() == null)
         {
             if (_lastSpawnType != spawnType || transform.childCount <= 0)
@@ -46,5 +49,6 @@ public class SpawnPoint : MonoBehaviour
 
             _lastSpawnType = spawnType;
         }
+#endif
     }
 }

@@ -209,3 +209,5 @@ MonoBehaviour:
   _statsManager: {fileID: 11400000, guid: 473427d6a7463b9428cc1b77a2b741a0, type: 2}
   _unitSetup:
     _rootGo: {fileID: 2360027388376535108}
+  _healthFlag: 0
+  _unitType: 5
