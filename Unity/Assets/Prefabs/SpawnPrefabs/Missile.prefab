@@ -199,6 +199,21 @@ PrefabInstance:
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 465010418463455137, guid: 988f4793eecc99b49a6c9d6bec33b75f,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 465010418463455137, guid: 988f4793eecc99b49a6c9d6bec33b75f,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -139134793
+      objectReference: {fileID: 0}
+    - target: {fileID: 465010418463455137, guid: 988f4793eecc99b49a6c9d6bec33b75f,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 465010418463455138, guid: 988f4793eecc99b49a6c9d6bec33b75f,
         type: 3}
       propertyPath: m_Name

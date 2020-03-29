@@ -10,7 +10,7 @@ namespace UI
         
         private void Awake()
         {
-            transform.Rotate(0, 0, _rotateSpeed * Time.deltaTime);
+            transform.Rotate(0, 0, _rotateSpeed, Space.Self);
         }
     }
 }
