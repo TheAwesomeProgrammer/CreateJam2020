@@ -40,7 +40,7 @@ namespace Bomb
         private void SetupTrigger()
         {
             TriggerNotifier triggerNotifier = _bombSetup.TriggerGo.AddComponent<TriggerNotifier>();
-            triggerNotifier.Init(new List<UnitType>(){ UnitType.Tower, UnitType.Base, UnitType.Missile });
+            triggerNotifier.Init(new List<UnitType>(){ UnitType.Tower, UnitType.Base, UnitType.Missile, UnitType.Ground });
             triggerNotifier.UnitEntered += OnUnitEntered;
         }
 
