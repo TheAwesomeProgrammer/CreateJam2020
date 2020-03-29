@@ -7,6 +7,10 @@ public static class Rigidbody2DExt
     {
         var explosionDir = rb.position - explosionPosition;
         var explosionDistance = explosionDir.magnitude;
+        if (explosionDistance <= 0)
+        {
+            explosionDistance = 0.01f;
+        }
 
         // Normalize without computing magnitude again
         if (upwardsModifier == 0)
@@ -19,7 +23,7 @@ public static class Rigidbody2DExt
             explosionDir.y += upwardsModifier;
             explosionDir.Normalize();
         }
-
+        
         rb.AddForce(Mathf.Lerp(0, explosionForce, Mathf.Max(0, 1 - (explosionDistance / explosionRadius))) * explosionDir, mode);
     }
 

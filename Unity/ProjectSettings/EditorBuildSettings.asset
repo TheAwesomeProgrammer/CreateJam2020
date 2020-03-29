@@ -6,11 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MenuSystem/Menu.unity
-    guid: 3e9a65c95a196f64dbbddb5f2759b10d
+    path: Assets/Scenes/DaniArea/Lvl1_2.unity
+    guid: 8958d5d76fa56af46aac91a6532f57be
   - enabled: 1
     path: Assets/Scenes/DaniArea/EscapeFromTheWest.unity
     guid: f6d274a3290d4494992351bcb708f7a1
+  - enabled: 1
+    path: Assets/Scenes/MenuSystem/Menu.unity
+    guid: 3e9a65c95a196f64dbbddb5f2759b10d
   - enabled: 1
     path: Assets/Scenes/MenuSystem/Credits.unity
     guid: 6d436833ca334f54bab154b8edf137f9
@@ -33,9 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/DaniArea/EscapeFromTheWest 1.unity
     guid: e13d514da5c04cd4ea7f9218f2a52573
   - enabled: 1
-    path: Assets/Scenes/DaniArea/EscapeFromTheWest.unity
-    guid: f6d274a3290d4494992351bcb708f7a1
-  - enabled: 1
     path: Assets/Scenes/DaniArea/Fisk.unity
     guid: fec9d1d165838d9499a06a209f417a71
   - enabled: 1
@@ -45,8 +45,8 @@ EditorBuildSettings:
     path: Assets/Scenes/DaniArea/Lvl1.unity
     guid: 181e57ba71c76da4093fcf054a6c8088
   - enabled: 1
-    path: Assets/Scenes/DaniArea/Lvl1_2.unity
-    guid: 8958d5d76fa56af46aac91a6532f57be
+    path: Assets/Scenes/DaniArea/EscapeFromTheWest.unity
+    guid: f6d274a3290d4494992351bcb708f7a1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 39e586654907d3c41837d61cd4803265,
       type: 2}
