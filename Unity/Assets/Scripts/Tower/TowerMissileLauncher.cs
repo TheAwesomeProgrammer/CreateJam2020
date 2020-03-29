@@ -47,6 +47,7 @@ namespace Tower
 
         private void LaunchMissile()
         {
+            AudioManager.Instance.PlayCannonFireSound();
             _missileData.Owner = _tower;
             _missileData.MissileDirection = (_towerVision.CanonForwardDirection() * GetRandomSpread()).normalized;
             Spawner.Spawn(_missileLaunchData.MissilePrefab, _missileLaunchData.SpawnPoint.position,

@@ -35,7 +35,6 @@ namespace Base
             GameObject spawnedBaseExplosion = Instantiate(SpawnManager.Instance.GetSpawnPrefabForSpawnType(SpawnType.BaseExplosion), transform.position,
                 Quaternion.identity);
             spawnedBaseExplosion.transform.localScale = transform.localScale;
-            Timer.Register(2, () => SceneManager.LoadScene(Scenes.WINSCENE));
         }
     }
 }

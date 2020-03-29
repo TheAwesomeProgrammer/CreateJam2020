@@ -49,6 +49,7 @@ namespace Owl
 
         private void OnTookDamage(int damage, IUnit unitdealingdamage)
         {
+            AudioManager.Instance.PlayOwlHitSound();
             MyGameManager.Instance.HealthUiScript.SetHealth((int)Armor.Health);
         }
 
