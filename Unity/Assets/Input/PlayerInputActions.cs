@@ -253,7 +253,7 @@ public class @PlayerInputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""e05beea8-674b-435e-80de-d268d82dac8a"",
-                    ""path"": ""<Keyboard>/q"",
+                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard&Mouse"",

@@ -58,8 +58,12 @@ namespace DefaultNamespace
 
                 if (!existsBase)
                 {
-                    Timer.Register(2, () => SceneManager.LoadScene(Scenes.WINSCENE));
+                    Timer.Register(2, () => SceneManager.LoadScene(_sceneToLoad));
                 }
+            }
+            else if (!Application.isPlaying)
+            {
+                _allScenes = GetAllScenes();
             }
         }
     }

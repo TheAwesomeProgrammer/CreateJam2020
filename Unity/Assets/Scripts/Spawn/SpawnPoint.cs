@@ -1,5 +1,6 @@
 ﻿using System;
 using Gamelogic.Extensions;
+using UnityEditor;
 using UnityEditor.Experimental.SceneManagement;
 using UnityEngine;
 
@@ -17,8 +18,9 @@ public class SpawnPoint : MonoBehaviour
     public Quaternion Rotation => transform.rotation;
 
     public Vector3 Scale => transform.localScale;
-
-    private void Awake()
+    
+    
+    private void OnEnable()
     {
         if (Application.isPlaying)
         {

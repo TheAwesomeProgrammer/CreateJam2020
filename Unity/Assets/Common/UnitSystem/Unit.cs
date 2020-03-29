@@ -78,7 +78,7 @@ namespace Common.UnitSystem
         
         private void OnDestroy()
         {
-            _lifeCycleHandler.OnDestroy();
+            _lifeCycleHandler?.OnDestroy();
         }
 
         protected virtual void OnDrawGizmos()
