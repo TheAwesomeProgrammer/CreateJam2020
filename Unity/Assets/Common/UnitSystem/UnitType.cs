@@ -7,6 +7,7 @@ namespace Common.UnitSystem
         Base,
         Missile,
         Tower,
+        Ground,
         All
     }
 }

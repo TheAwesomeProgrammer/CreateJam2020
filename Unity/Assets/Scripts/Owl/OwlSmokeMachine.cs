@@ -49,13 +49,16 @@ namespace Owl
 
         private void SpawnSmokeLoop()
         {
-            AudioManager.Instance.PlayFireSound();
-            GameObject spawnedSmoke = Object.Instantiate(SpawnManager.Instance.GetSpawnPrefabForSpawnType(SpawnType.Smoke),
-                _owlSetup.SmokeSpawnPoint.position, Quaternion.identity);
-            Object.Destroy(spawnedSmoke, _data.LiveTime.Value);
+            if (_data.SmokeAmount.Value > 0)
+            {
+                AudioManager.Instance.PlayFireSound();
+                GameObject spawnedSmoke = Object.Instantiate(SpawnManager.Instance.GetSpawnPrefabForSpawnType(SpawnType.Smoke),
+                    _owlSetup.SmokeSpawnPoint.position, Quaternion.identity);
+                Object.Destroy(spawnedSmoke, _data.LiveTime.Value);
 
-            _data.SmokeAmount.DecreaseTempStat(_data.SmokeUsagePerCloud.Value);
-            _spawnSmokeTimer = Timer.Register(_data.SpawnInterval.Value, SpawnSmokeLoop);
+                _data.SmokeAmount.DecreaseTempStat(_data.SmokeUsagePerCloud.Value);
+                _spawnSmokeTimer = Timer.Register(_data.SpawnInterval.Value, SpawnSmokeLoop);
+            }
         }
 
         private void GrowthCycleLoop()
