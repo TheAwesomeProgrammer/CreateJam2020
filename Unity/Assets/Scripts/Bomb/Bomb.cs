@@ -56,6 +56,7 @@ namespace Bomb
         
         private void OnDied(IUnit killedBy)
         {
+            AudioManager.Instance.PlayExplosionSound();
             Explosion.Data explosionData = new Explosion.Data()
             {
                 Damage = (int)_data.Damage.Value,

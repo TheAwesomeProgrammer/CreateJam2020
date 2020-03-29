@@ -18,6 +18,8 @@ public class MyGameManager : Singleton<MyGameManager>
     public HealthUIScript HealthUiScript => _healthUiScript;
 
     public Transform SmokeBarTransform => _smokeBarTransform;
+
+    public event Action SpawnedObjects;
     
     private void Start()
     {
@@ -26,6 +28,6 @@ public class MyGameManager : Singleton<MyGameManager>
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Owl);
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Base);
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Ground);
-        SpawnManager.Instance.SpawnAllWithType(SpawnType.CraterGround);
+        SpawnedObjects?.Invoke();
     }
 }

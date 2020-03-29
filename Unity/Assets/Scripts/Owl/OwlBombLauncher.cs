@@ -32,6 +32,8 @@ namespace Owl
         {
             if (_canLaunchBomb && _bombData.Ammo.Value > 0)
             {
+                AudioManager.Instance.PlaySpawnBombSound();
+                AudioManager.Instance.PlayWooshSound();
                 _wizardAnimation.WizardUseWandAnimation();
                 _canLaunchBomb = false;
                 Spawner.Spawn(SpawnManager.Instance.GetSpawnPrefabForSpawnType<Bomb.Bomb>(SpawnType.Bomb),
