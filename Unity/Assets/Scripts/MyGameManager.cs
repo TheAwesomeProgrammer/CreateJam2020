@@ -1,6 +1,8 @@
 ﻿using System;
 using Gamelogic.Extensions;
+using Generated;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MyGameManager : Singleton<MyGameManager>
 {
@@ -29,5 +31,18 @@ public class MyGameManager : Singleton<MyGameManager>
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Base);
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Ground);
         SpawnedObjects?.Invoke();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(Scenes.MENU);
+        }
     }
 }

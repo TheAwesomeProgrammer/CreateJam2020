@@ -36,7 +36,7 @@ MonoBehaviour:
       _maxStatValue: -1
   _attackStats:
     _attackSpeedStat:
-      _startStat: 1
+      _startStat: 0.4
       _showMinMaxValue: 0
       _minStatValue: -2.1474836e+9
       _maxStatValue: -1
