@@ -26,6 +26,27 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Prototype/Prototype.unity
     guid: 50c948b81694bea41b5c8b393072b8c3
+  - enabled: 1
+    path: Assets/Scenes/DaniArea/DaniScene.unity
+    guid: 1f00767a3905a1246ab01e1ce437c84e
+  - enabled: 1
+    path: Assets/Scenes/DaniArea/EscapeFromTheWest 1.unity
+    guid: e13d514da5c04cd4ea7f9218f2a52573
+  - enabled: 1
+    path: Assets/Scenes/DaniArea/EscapeFromTheWest.unity
+    guid: f6d274a3290d4494992351bcb708f7a1
+  - enabled: 1
+    path: Assets/Scenes/DaniArea/Fisk.unity
+    guid: fec9d1d165838d9499a06a209f417a71
+  - enabled: 1
+    path: Assets/Scenes/DaniArea/Level2.unity
+    guid: 2ab8a07f1a2dc5842a4a195b6b56a275
+  - enabled: 1
+    path: Assets/Scenes/DaniArea/Lvl1.unity
+    guid: 181e57ba71c76da4093fcf054a6c8088
+  - enabled: 1
+    path: Assets/Scenes/DaniArea/Lvl1_2.unity
+    guid: 8958d5d76fa56af46aac91a6532f57be
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 39e586654907d3c41837d61cd4803265,
       type: 2}
