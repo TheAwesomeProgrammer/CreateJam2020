@@ -1,6 +1,7 @@
 ﻿using Common.UnitSystem;
 using Common.UnitSystem.Stats;
 using Generated;
+using Plugins.Timer.Source;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -31,7 +32,10 @@ namespace Base
 
         private void OnDied(IUnit killedBy)
         {
-            SceneManager.LoadScene(Scenes.WINSCENE);
+            GameObject spawnedBaseExplosion = Instantiate(SpawnManager.Instance.GetSpawnPrefabForSpawnType(SpawnType.BaseExplosion), transform.position,
+                Quaternion.identity);
+            spawnedBaseExplosion.transform.localScale = transform.localScale;
+            Timer.Register(2, () => SceneManager.LoadScene(Scenes.WINSCENE));
         }
     }
 }

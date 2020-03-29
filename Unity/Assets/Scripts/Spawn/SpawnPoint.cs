@@ -1,5 +1,6 @@
 ﻿using System;
 using Gamelogic.Extensions;
+using UnityEditor.Experimental.SceneManagement;
 using UnityEngine;
 
 [ExecuteInEditMode]
@@ -32,7 +33,7 @@ public class SpawnPoint : MonoBehaviour
 
     private void Update()
     {
-        if (!Application.isPlaying)
+        if (!Application.isPlaying && PrefabStageUtility.GetCurrentPrefabStage() == null)
         {
             if (_lastSpawnType != spawnType || transform.childCount <= 0)
             {
