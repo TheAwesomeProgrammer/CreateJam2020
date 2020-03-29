@@ -5,5 +5,8 @@
     Owl,
     Explosion,
     Smoke,
-    Base
+    Base,
+    Ground,
+    CraterGround,
+    BaseExplosion
 }
