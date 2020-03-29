@@ -1,17 +1,41 @@
 ﻿using System;
+using System.IO;
 using Generated;
+using Plugins.NaughtyAttributes.Scripts.Core.DrawerAttributes;
 using Plugins.Timer.Source;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace DefaultNamespace
 {
+    [ExecuteInEditMode]
     public class BasesManager : MonoBehaviour
     {
+        private DropdownList<string> _allScenes;
+
+        [SerializeField, Dropdown("_allScenes")] 
+        private string _sceneToLoad;
+
+        private DropdownList<string> GetAllScenes()
+        {
+            DropdownList<string> allScenes = new DropdownList<string>();
+            foreach (var scene in EditorBuildSettings.scenes)
+            {
+                allScenes.Add(Path.GetFileNameWithoutExtension(scene.path), Path.GetFileNameWithoutExtension(scene.path));
+            }
+
+            return allScenes;
+        }
+        
         private Base.Base[] _bases;
         private void Awake()
         {
-            MyGameManager.Instance.SpawnedObjects += OnSpawnedObjects;
+            if (Application.isPlaying)
+            {
+                MyGameManager.Instance.SpawnedObjects += OnSpawnedObjects;
+            }
+
         }
 
         private void OnSpawnedObjects()
@@ -21,18 +45,21 @@ namespace DefaultNamespace
 
         private void Update()
         {
-            bool existsBase = false;
-            foreach (var baseStructure in _bases)
+            if (Application.isPlaying)
             {
-                if (baseStructure != null)
+                bool existsBase = false;
+                foreach (var baseStructure in _bases)
                 {
-                    existsBase = true;
+                    if (baseStructure != null)
+                    {
+                        existsBase = true;
+                    }
                 }
-            }
 
-            if (!existsBase)
-            {
-                Timer.Register(2, () => SceneManager.LoadScene(Scenes.WINSCENE));
+                if (!existsBase)
+                {
+                    Timer.Register(2, () => SceneManager.LoadScene(Scenes.WINSCENE));
+                }
             }
         }
     }
