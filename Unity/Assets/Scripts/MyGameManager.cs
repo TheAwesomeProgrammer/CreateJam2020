@@ -25,5 +25,7 @@ public class MyGameManager : Singleton<MyGameManager>
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Bomb);
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Owl);
         SpawnManager.Instance.SpawnAllWithType(SpawnType.Base);
+        SpawnManager.Instance.SpawnAllWithType(SpawnType.Ground);
+        SpawnManager.Instance.SpawnAllWithType(SpawnType.CraterGround);
     }
 }
